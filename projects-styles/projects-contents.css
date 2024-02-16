@@ -1,0 +1,280 @@
+
+.dashboard{
+    margin: 100px 0px 10px 0px;
+    width: 100vw;
+    padding: 0;
+
+    height: 100vh;
+    background-image:url('/pictures/background.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    
+    
+
+}
+.mini-container1
+{
+    position: absolute;
+    top:75px;
+    left: 70px;
+    border-radius: 20px 20px 20px 20px;
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(65, 63, 63); 
+    
+} 
+.center-image{
+    position: absolute;
+    top: -40px;
+    left: 160px;
+    
+    
+
+}
+.center-image-icon
+{
+    width: 90px;
+    height: 90px;
+    border: 2px solid wheat;
+    padding: 0;
+    margin:0 ;
+    border-radius: 200px;
+    object-fit: cover;
+
+
+}
+
+.upper{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding:10px 0px 0px 10px ;
+}  
+.youtube-icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 70px;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
+
+}
+.username{
+    color: wheat;
+    padding-left: 0px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.username:hover{
+    text-decoration: underline;
+}
+.mid{
+    width: 370px;
+    margin: 50px 0px 0px 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+.lower{
+    padding-left: 20px;
+    
+
+}
+
+.videos-button{
+    cursor: pointer;
+    margin-top: 50px;
+    background-color: red;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    cursor:pointer;
+    position: relative;
+    
+        /* ...existing styles... */
+        transition: background-color 0.3s ease;
+    
+}
+
+.videos-button-row .mini-container2 {
+    position: absolute;
+    top: -50px; /* Adjust as needed */
+    display: grid;
+    grid-template-columns: 150px 150px;
+    justify-items: center;
+    column-gap: 60px;
+    padding: 20px;
+    right: -700px; /* Initially hide the container off-screen */
+    width: 450px; /* Set initial width */
+    max-width: 450px; /* Set maximum width */
+    height: 500px; /* Set height */
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+    border-radius: 20px; /* Rounded corners */
+    opacity: 0; /* Initially set opacity to 0 for hidden effect */
+    background-color: rgb(65, 63, 63); /* Background color */
+    transition: right 0.5s ease, opacity 0.5s ease; /* Add transition for sliding animation */
+}
+
+
+ 
+
+.sub-containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+ 
+   
+ }
+ .thumbnail{
+     width: 120px;
+     height: 70px;
+     display: inline-block;
+  
+ }
+ 
+ .thumbnail-row{
+     cursor: pointer;
+     display: flex;
+     flex-direction: row;
+   
+     align-items: center;
+   
+     position: relative;
+     box-shadow: 1px 1px 1px rgb(0,0,0,0.5);
+    
+     margin:10px 0 10px 40px;
+     
+    
+    
+    
+ }
+ .thumbnail-row:active{
+     box-shadow:  white;
+     transform: translate(2px,2px);
+ }
+ .title-row{
+     
+     width: 100%;
+     padding: 10px 10px 10px 10px;
+    color: wheat;
+     font-weight: 600;
+     font-size: 20px;
+     text-align: center;
+    
+ }
+ .thumbnail-row .time-container{
+     position: absolute;
+     bottom: 10px;
+     right: 10px;
+     background-color: black;
+     color: white;
+     font-weight: bold;  
+     padding: 2px 4px 2px 10px;
+     width: 30px;
+     opacity: 0;
+     font-size: 10px;
+     pointer-events: none;
+     transition: opacity 0.15s;
+ 
+ 
+ }
+ .thumbnail-row:hover .time-container{
+     opacity: 1;
+ }
+ p{
+     margin: 0;
+     padding: 0;
+ }
+ 
+ 
+ 
+ 
+ .thumbnail-row .play-container{
+     position: absolute;
+     top:15px;
+     left: 25px;
+     right: 10px;
+     bottom: 10px;
+    
+     color: black;
+     font-weight: bold;  
+     padding: 2px 4px 2px 20px;
+     width: 70px;
+     opacity: 0;
+     font-size: 15px;
+     pointer-events: none;
+     transition: opacity 0.15s;
+ 
+ 
+ }
+ .thumbnail-row:hover {
+     opacity: 0.8;
+ }
+ .thumbnail-row:hover .play-container{
+     opacity: 1;
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ #video-player-overlay {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.7);
+     z-index: 9999;
+ }
+ 
+ #video-player {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     
+     padding: 20px;
+     max-width: 60%; /* Adjust maximum width */
+     max-height: 60%; /* Adjust maximum height */
+ }
+ #video-player video {
+     width: 100%; /* Adjust width */
+     height: 100%; /* Adjust height */
+ }
+ 
+ #close-button {
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     font-size: 20px;
+     cursor: pointer;
+     background-color: #f44336; /* Red background color */
+     color: white; /* White text color */
+     border: none; /* Remove border */
+     border-radius: 50%; /* Round button corners */
+     width: 30px; /* Adjust button width */
+     height: 30px; /* Adjust button height */
+     display: flex; /* Use flexbox for centering */
+     justify-content: center; /* Center horizontally */
+     align-items: center; /* Center vertically */
+ }
+ 
+ #close-button:hover {
+     background-color: #d32f2f; /* Darker red color on hover */
+ }
+ 
+
+

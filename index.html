@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BioData</title>
+        <link rel="stylesheet" href="/main/header.css">
+        <link rel="stylesheet" href="/main/general.css">
+        <link rel="stylesheet" href="/main/content.css">
+        <link rel="stylesheet" href="/main/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap" rel="stylesheet">
+        <script>
+            function openAboutme(){
+                window.location.href="/index.html";
+            }
+            function openResume() {
+                window.location.href = "/resume.html";
+            }
+            
+            function openContacts() {
+                window.location.href = "/contacts.html";
+            }
+            
+            function openProjects() {
+                window.location.href = "/projects.html";
+            }
+        </script>
+    </head>
+
+    <body>
+        <!--header -->
+        <div class="header">
+            <div class="left-header">
+                <div class="bullet"></div>
+                <div class="name">Swikrit Saud</div>
+                <div class="profession"> / VIDEO EDITOR</div>
+            </div>
+
+
+            <div class="right-header">
+                <div class="aboutme"onclick="openAboutme()">ABOUT ME</div>
+                <div class="resume" onclick="openResume()">RESUME</div>
+                <div class="projects" onclick="openProjects()">PROJECTS</div>
+                <div class="contact" onclick="openContacts()">CONTACTS</div>
+            </div>    
+        
+        </div>
+
+
+        <!--body-->
+       <div class="left-background">
+            <div class="main-section">
+                <div class="left-section">
+                    <div class="profile-section">
+                       <div class="image-row">
+                            <img src="/pictures/swikrit2.png" class="image">
+                        </div>
+                        <div class="image-name-row"><p>Swikrit Saud,</p>
+                            <p>Age- 19</p></div>
+                        <div class="blue-line"></div>
+                        <div class="image-profession-row"><p>VIDEO EDITOR</p></div>
+                    </div>
+                    <div class="social-section">
+                        
+                        <a href="https://www.facebook.com/swikrit001" target="_blank"><img src="/pictures/icons8-facebook-30.png" class="icons"></a>
+                        <a href="https://www.instagram.com/saud.swikrit/" target="_blank"><img src="/pictures/icons8-instagram-30.png" class="icons"></a>
+                        <img src="/pictures/icons8-twitter-30.png" class="icons">
+                        <img src="/pictures/icons8-linkedin-30.png" class="icons">          
+                              
+                    </div>
+                </div>
+                <div class="info-section">
+                    <div class="greeting">Hello</div>
+                    <div class="your-detail">Here's who I am & what I do</div>
+                    <div class="buttons">
+                        <div class="resume-button-row"><button class="resume-button" onclick="openResume()">RESUME</button></div>
+                        <div class="projects-button-row"><button class="projects-button" onclick="openProjects()">PROJECTS</button></div>
+                    </div>
+                    <div class="description">I am Swikrit, an experienced video editor. I specialize in transforming raw footage into captivating visual stories that engage and captivate audiences. Let me elevate your content to new heights.</div>
+                    
+
+                </div>                
+            </div>
+            
+       </div>
+
+
+        <!--footer-->
+       <div class="footer">
+        <div class="footer-cols">
+            <p class="heading">Call</p>
+            <p class="sub">9745340296</p>    
+        </div>
+        <div class="footer-cols"> 
+            <p class="heading">Write</p>
+            <a href="mailto:saudswikrit@gmail.com" class="email" target="_blank" ><p class="sub">saudswikrit@gmail.com</p></a>    
+        </div>
+        <div class="footer-cols"> 
+            <p class="heading">Follow</p>
+            <p class="sub-links">
+                <a href="https://www.facebook.com/swikrit001" target="_blank"><img src="/pictures/icons8-facebook-30.png" class="icons"></a>               
+                <a href="https://www.instagram.com/saud.swikrit/" target="_blank"><img src="/pictures/icons8-instagram-30.png" class="icons"></a>
+                <img src="/pictures/icons8-twitter-30.png" class="icons">
+                <img src="/pictures/icons8-linkedin-30.png" class="icons"> </p>    
+        </div>
+
+       </div>
+
+    </body>
+
+</html>

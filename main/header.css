@@ -1,0 +1,85 @@
+
+.header{
+    position: fixed;
+    height: 100px;
+    top:0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    z-index: 1;
+
+}
+
+.left-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 50px;
+    width: 600px;
+    
+
+}
+
+.bullet{
+    background-color: #0050FF;
+    height: 16px;
+    width: 16px;
+}
+.name{
+    font-family:poppins;
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.profession{
+    font-family: poppins;
+    font-weight: 100;
+    
+    margin-left: 10px;
+
+}
+
+.right-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex: 1;
+    margin-left: 300px;
+    margin-right: 10px;
+    font-weight: 100;
+    font-family: Poppins;
+    font-size: 14px;
+    flex-wrap: nowrap;
+    
+}
+.aboutme{
+    color:#0050FF;
+    cursor: pointer;
+    
+}
+.resume{
+    cursor: pointer;
+}
+.resume:hover{
+    color: #0050FF;
+}
+.projects{
+    cursor: pointer;
+}
+.projects:hover{
+    color: #0050FF;
+}
+
+.contact{
+    cursor: pointer;
+}
+.contact:hover{
+    color: #0050FF;
+}
+

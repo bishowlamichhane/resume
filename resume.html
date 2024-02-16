@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resume</title>
+        <script>
+          
+
+            function openAboutme() {
+                window.location.href="/index.html";
+            }
+            function openResume() {
+                window.location.href="/resume.html";
+            }
+            function openProjects() {
+                window.location.href="/projects.html";
+            }
+            function openContacts() {
+                window.location.href="/contacts.html";
+            }
+            document.addEventListener("DOMContentLoaded", function () {
+    const posters = document.querySelectorAll(".poster");
+
+    posters.forEach(poster => {
+        const miniContainer = poster.querySelector(".mini-container");
+
+        poster.addEventListener("click", function (event) {
+            // Toggle the visibility of the mini-container
+            miniContainer.style.opacity = miniContainer.style.opacity === "1" ? "0" : "1";
+            
+            // Prevent the click event from propagating to the document
+            event.stopPropagation();
+        });
+
+        document.addEventListener("click", function () {
+            // Hide the mini-container when clicking outside
+            miniContainer.style.opacity = "0";
+        });
+    });
+});
+
+
+        </script>
+        <link rel="stylesheet" href="/resume-styles/resume-content.css">
+        <link rel="stylesheet" href="resume-styles/resume-header.css">
+        <link rel="stylesheet" href="resume-styles/resume-general.css">
+        
+        <link rel="stylesheet" href="resume-styles/resume-footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Header-->
+         
+         <div class="header">
+            <div class="left-header">
+                <div class="bullet"></div>
+                <div class="name">Swikrit Saud</div>
+                <div class="profession"> / VIDEO EDITOR</div>
+            </div>
+
+
+            <div class="right-header">
+                <div class="aboutme" onclick="openAboutme()">ABOUT ME</div>
+                <div class="resume" onclick="openResume()">RESUME</div>
+                <div class="projects" onclick="openProjects()">PROJECTS</div>
+                <div class="contact" onclick="openContacts()">CONTACTS</div>
+            </div> 
+        
+        </div>
+
+        <!--body-->
+        <div class="download">
+            
+            <a href="/CV.pdf" target="_blank"><button class="download-button">Download CV</button></a>
+
+        </div>
+        
+
+        <div class="container">
+            
+            <div class="poster">
+                <div class="mini-container mini-container1">
+
+                    <p class="container1-text">I haven't been indulged in any professional position but I have experience editing my own videos which i post on YouTube, click the button below to see!</p>
+                    <a href="https://www.youtube.com/@padhante" target="_blank"><button class="container1-button">YouTube</button></a>
+                
+                </div>
+                <img class="poster-icon" src="/pictures/Sdaaa472402d04600a573c2af386b3573u.webp">
+            </div>
+            <div class="poster">
+               
+                <div class="mini-container mini-container2">
+                    <div class="school-heading">
+                        <div class="bullet"></div>
+                        <div class="school-heading-text">+2 Degree</div>
+                    </div>
+                    
+                    <div class="school-body-text">
+                    -> Viswa Niketan, Tripureswor (2021-2022)
+                    </div>
+                    
+                    <div class="school-heading">
+                        <div class="bullet"></div>
+                        <div class="school-heading-text">Bachelor Degree</div>
+                    </div>
+                    
+                    <div class="school-body-text">
+                    -> Amrit Science Campus, Lazimpat (2022-2026)<br>
+                    -> Currently Studying 2<span style="vertical-align: super; font-size: smaller;">nd</span> Year
+                    </div>
+                    
+                </div>
+                <img class="poster-icon" src="/pictures/education-and-technology-featured_1.webp"></div>
+            <div class="poster">
+                <div class="mini-container mini-container3">
+                    <img src="/pictures/after-effects.PNG" class="skills-images">
+                    <img src="/pictures/photoshop.PNG" class="skills-images">
+                    <img src="/pictures/premire-pro.PNG" class="skills-images">
+
+                </div>
+                <img class="poster-icon" src="/pictures/skills.png"></div>
+        </div>
+
+        
+
+    </body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" href="projects-styles/projects-contents.css">
+    <link rel="stylesheet" href="projects-styles/projects-header.css">
+    <link rel="stylesheet" href="projects-styles/projects-general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap" rel="stylesheet">
+    
+    <script>
+        function openAboutme(){
+            window.location.href="/index.html";
+        }
+        function openResume() {
+            window.location.href = "/resume.html";
+        }
+        
+        function openContacts() {
+            window.location.href = "/contacts.html";
+        }
+        
+        function openProjects() {
+            window.location.href = "/projects.html";
+        }
+        function toggleVideosContainer() {
+            const videosContainer = document.querySelector('.videos-container');
+            videosContainer.classList.toggle('clicked');
+        }
+
+        const scrollButton = document.querySelector('.scroll-button');
+        const miniContainer = document.querySelector('.mini-container2');
+
+        scrollButton.addEventListener('click', () => {
+        miniContainer.scrollTop = miniContainer.scrollHeight;
+        });
+
+        function toggleVideosContainer() {
+    const miniContainer = document.querySelector('.videos-button-row .mini-container2');
+    const isVisible = miniContainer.style.right === '0px'; // Check if container is currently visible
+
+    if (isVisible) {
+        miniContainer.style.right = '-700px'; // Hide the container off-screen
+        miniContainer.style.opacity = '1'; // Set opacity to 0 for hidden effect
+    } else {
+        miniContainer.style.right = '-750px'; // Show the container by bringing it into view
+        miniContainer.style.opacity = '1'; // Set opacity to 1 for visible effect
+    }
+}
+
+
+
+
+    </script>
+</head>
+<body>
+     <!--Header-->
+     
+     <div class="header">
+        <div class="left-header">
+            <div class="bullet"></div>
+            <div class="name">Swikrit Saud</div>
+            <div class="profession"> / VIDEO EDITOR</div>
+        </div>
+
+
+        <div class="right-header">
+            <div class="aboutme"onclick="openAboutme()">ABOUT ME</div>
+            <div class="resume" onclick="openResume()">RESUME</div>
+            <div class="projects" onclick="openProjects()">PROJECTS</div>
+            <div class="contact" onclick="openContacts()">CONTACTS</div>
+        </div>    
+    
+    </div>
+   
+
+    <!--body-->
+    <div class="dashboard">
+        <div class="mini-container1">
+            <div class="center-image">
+                <img src="/pictures/swikrit_channel_profile.png" class="center-image-icon">
+            </div>
+            <div class="upper">
+               <img class="youtube-icon" src="/pictures/youtube-logo-png-2069.png">
+               <a href="https://www.youtube.com/@padhante" target="_blank"><p class="username">/@padhante</p></a>
+            </div>
+            <div class="mid">I work on my very own YouTube channel. I record and edit gameplay videos, and vlogs. Here are some for your to see.</div>
+            <div class="lower">
+                
+               <div class="videos-button-row">
+                <button class="videos-button" onclick="toggleVideosContainer()">See Edits</button>
+                
+                <div class="mini-container2"  id="miniContainer2">
+                    <div class="sub-containers" onclick="playVideo('Teaser.mp4')">
+                        <div class="thumbnail-row video-thumbnail">
+                            <img src="/thumbnails/Teaser.png" class="thumbnail">
+                            <div class="time-container">
+                                <p>0:48</p>
+                            </div>
+                            <div class="play-container">
+                                <img src="/pictures/play-button-arrowhead.png" width="30px">
+                            </div>
+                        </div>
+                        <div class="title-row"> Teaser</div>
+                    </div>
+                    <div class="sub-containers" onclick="playVideo('Speed Ramp.mp4')">
+                        <div class="thumbnail-row video-thumbnail">
+                            <img src="/thumbnails/Speed Ramp.png" class="thumbnail">
+                            <div class="time-container">
+                                <p>0:43</p>
+                            </div>
+                            <div class="play-container">
+                                <img src="/pictures/play-button-arrowhead.png" width="30px">
+                            </div>
+                        </div>
+                        <div class="title-row"> Speed-Ramp</div>
+                    </div>
+                    <!-- Add similar sections for other thumbnails -->
+                    <div class="sub-containers" onclick="playVideo('Cinematic.mp4')">
+                        <div class="thumbnail-row video-thumbnail">
+                            <img src="/thumbnails/Cinematic.png" class="thumbnail">
+                            <div class="time-container">
+                                <p>0:21</p>
+                            </div>
+                            <div class="play-container">
+                                <img src="/pictures/play-button-arrowhead.png" width="30px">
+                            </div>
+                        </div>
+                        <div class="title-row"> Cinematic</div>
+                    </div>
+            
+                    <!-- Add similar sections for other thumbnails -->
+                    <div class="sub-containers" onclick="playVideo('Map Transition.mp4')">
+                        <div class="thumbnail-row video-thumbnail">
+                            <img src="/thumbnails/Map Transition.png" class="thumbnail">
+                            <div class="time-container">
+                                <p>0:12</p>
+                            </div>
+                            <div class="play-container">
+                                <img src="/pictures/play-button-arrowhead.png" width="30px">
+                            </div>
+                        </div>
+                        <div class="title-row"> Map Transition</div>
+                    </div>
+            
+                    <!-- Add similar sections for other thumbnails -->
+                    <div class="sub-containers" onclick="playVideo('Character Introduction.mp4')">
+                        <div class="thumbnail-row video-thumbnail">
+                            <img src="/thumbnails/Character Intro.png" class="thumbnail">
+                            <div class="time-container">
+                                <p>0:48</p>
+                            </div>
+                            <div class="play-container">
+                                <img src="/pictures/play-button-arrowhead.png" width="30px">
+                            </div>
+                        </div>
+                        <div class="title-row"> Character</div>
+                    </div>
+            
+                    <!-- Add similar sections for other thumbnails -->
+                    <div class="sub-containers" onclick="playVideo('Match Cut.mp4')">
+                        <div class="thumbnail-row video-thumbnail">
+                            <img src="/thumbnails/Match Cut.png" class="thumbnail">
+                            <div class="time-container">
+                                <p>0:19</p>
+                            </div>
+                            <div class="play-container">
+                                <img src="/pictures/play-button-arrowhead.png" width="30px">
+                            </div>
+                        </div>
+                        <div class="title-row"> Match Cut</div>
+                    </div>
+                </div>
+            
+                <div id="video-player-overlay">
+                    <div id="video-player">
+                        <video id="video" controls> <!-- Remove width and height attributes -->
+                            <source id="video-source" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button id="close-button" onclick="closeVideo()">&times;</button>
+                    </div>
+                </div>
+            
+            
+            </div>
+            
+            </div>
+        </div>
+
+            
+        
+    </div>
+    <script>
+        const videoPlayerOverlay = document.getElementById('video-player-overlay');
+        const closeButton = document.getElementById('close-button');
+        const video = document.getElementById('video');
+        const videoSource = document.getElementById('video-source');
+        
+        function playVideo(videoFileName) {
+            videoSource.src = "/videos/" + videoFileName;
+            video.load();
+            videoPlayerOverlay.style.display = 'block';
+            video.play();
+        }
+        
+        function closeVideo() {
+            videoPlayerOverlay.style.display = 'none';
+            video.pause();
+        }
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,32 @@
+
+.footer{
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+  
+    margin-right: 50px;
+}
+.footer-cols{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding-left: 50px;
+    
+}
+.heading{
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 0px;
+}
+.sublinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-betw;
+    
+}
+.email{
+    text-decoration: none;
+}

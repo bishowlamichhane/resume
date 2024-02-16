@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="/contacts-styles/contacts-header.css">
+        <link rel="stylesheet" href="/contacts-styles/contacts-content.css">
+        <link rel="stylesheet" href="/contacts-styles/contacts-general.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;600&display=swap" rel="stylesheet">
+
+
+        <script>
+            function openAboutme(){
+                window.location.href="/index.html";
+            }
+            function openResume() {
+                window.location.href = "/resume.html";
+            }
+            
+            function openContacts() {
+                window.location.href = "/contacts.html";
+            }
+            
+            function openProjects() {
+                window.location.href = "/projects.html";
+            }
+        </script>
+    </head>
+
+
+    <body>
+
+          <!--Header-->
+         
+          <div class="header">
+            <div class="left-header">
+                <div class="bullet"></div>
+                <div class="name">Swikrit Saud</div>
+                <div class="profession"> / VIDEO EDITOR</div>
+            </div>
+
+
+            <div class="right-header">
+                <div class="aboutme"onclick="openAboutme()">ABOUT ME</div>
+                <div class="resume" onclick="openResume()">RESUME</div>
+                <div class="projects" onclick="openProjects()">PROJECTS</div>
+                <div class="contact" onclick="openContacts()">CONTACTS</div>
+            </div>   
+        
+        </div>
+
+
+
+        <!--Body-->
+
+        <div class="contact-container">
+            <div class="left-section">
+                <h1>*MY CONTACT </h1>
+                <div class="sections">
+                    <h3>Phone</h3>
+                    <p>+977 9745340296</p>
+                </div>
+                <div class="sections">
+                    <h3>Email</h3>
+                    <p><a href="mailto:saudswikrit@gmail.com" target="_blank">saudswikrit@gmail.com</a></p>
+                </div>
+                <div class="sections">
+                    <h3>Socials</h3>
+                    <p class="social-links">
+                        <a href="https://www.facebook.com/swikrit001" target="_blank"><img src="/pictures/icons8-facebook-30.png" class="icons"></a>               
+                        <a href="https://www.instagram.com/saud.swikrit/" target="_blank"><img src="/pictures/icons8-instagram-30.png" class="icons"></a>
+                        <img src="/pictures/icons8-twitter-30.png" class="icons">
+                        <img src="/pictures/icons8-linkedin-30.png" class="icons"> </p> 
+                    </p>
+                </div>
+               
+            </div>
+            <div class="right-section">
+                <div class="image-container">
+                    <img src="/pictures/swikrit-bg.jpg" class="image">
+            </div>
+        </div>
+    </body>
+</html>
